@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+    </header>
+    <section class="jogadores">
+        <label for="jogador1">(X) Jogador 1</label>
+        <input type="text" name="jogador1" id="jogador1">
+        <br>
+        <label for="jogador2">(O) Jogador 2</label>
+        <input type="text" name="jogador2" id="jogador2">
+    </section>
+    <h3 id="vezDojogador">De quem é a vez?</h3>
+    <section id="tabuleiro">
+        <span data-regiao="1.1" class="quadrado"></span>
+        <span data-regiao="1.2" class="quadrado"></span>
+        <span data-regiao="1.3" class="quadrado"></span>
+        <span data-regiao="2.1" class="quadrado"></span>
+        <span data-regiao="2.2" class="quadrado"></span>
+        <span data-regiao="2.3" class="quadrado"></span>
+        <span data-regiao="3.1" class="quadrado"></span>
+        <span data-regiao="3.2" class="quadrado"></span>
+        <span data-regiao="3.3" class="quadrado"></span> 
+    </section>
+    <button id="reiniciar">Reiniciar</button>
+    
+    <!-- Exibe uma mensagem de erro na tela -->
+    <div id="fundoMsgErro">
+        <div id="janelaMsg">
+            <p>É necessário colocar o nome dos jogadores para poder iniciar</p>
+            <button id="fecharMsgErro">Fechar</button>
+        </div>
+    </div>
+    <div id="fundoMsgGanhador">
+        <div id="janelaMsg">
+            <p id="msgGanhador"></p>
+            <button id="fecharMsgGanhador">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
