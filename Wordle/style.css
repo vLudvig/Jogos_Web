@@ -1,0 +1,39 @@
+.theme-dark{
+    background-color: rgb(46, 45, 45);
+    color: aliceblue;
+}
+
+.theme-ligth{
+    background-color: aliceblue ;
+    color: rgb(46, 45, 45);
+}
+
+header {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.input{
+    text-align: center;
+}
+
+.linha{
+    display: flex;
+    justify-content: center;
+}
+
+.regiao{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 121, 121);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(219, 219, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;   
+}
+
